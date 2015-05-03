@@ -310,7 +310,7 @@ Text Label 3500 3350 2    60   ~ 0
 ~OD
 Text Label 4000 3650 3    60   ~ 0
 GND
-Text Notes 1100 4100 0    90   Italic 18
+Text Notes 5400 3100 0    90   Italic 18
 0x8000 - 0xBFFF\nBank Select
 Text Notes 5400 1150 0    90   Italic 18
 Battery Backup
@@ -379,21 +379,21 @@ Text Label 3500 3050 2    60   ~ 0
 $Comp
 L SP3T SW1
 U 1 1 5543BB86
-P 1150 4600
-F 0 "SW1" H 1150 4800 70  0000 C CNN
-F 1 "SP3T" H 1150 4350 70  0000 C CNN
-F 2 "te-1509:EG1300" H 1150 4600 60  0001 C CNN
-F 3 "http://media.digikey.com/pdf/Data%20Sheets/E-Switch%20PDFs/EG1300_Series.pdf " H 1150 4600 60  0001 C CNN
-	1    1150 4600
+P 5450 3600
+F 0 "SW1" H 5450 3800 70  0000 C CNN
+F 1 "SP3T" H 5450 3350 70  0000 C CNN
+F 2 "te-1509:EG1300" H 5450 3600 60  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/E-Switch%20PDFs/EG1300_Series.pdf " H 5450 3600 60  0001 C CNN
+	1    5450 3600
 	-1   0    0    -1  
 $EndComp
-Text Label 750  4600 2    60   ~ 0
+Text Label 5050 3600 2    60   ~ 0
 VCC
-Text Label 750  4750 2    60   ~ 0
+Text Label 5050 3750 2    60   ~ 0
 ~PV
-Text Label 750  4450 2    60   ~ 0
+Text Label 5050 3450 2    60   ~ 0
 PV
-Text Label 1750 4600 2    60   ~ 0
+Text Label 6050 3600 2    60   ~ 0
 BSW
 $Comp
 L AS6C1008 U1
@@ -411,31 +411,31 @@ VCC
 $Comp
 L CD4572 U2
 U 1 1 5545123C
-P 2300 4850
-F 0 "U2" H 2000 4300 60  0000 C CNN
-F 1 "CD4572" V 2300 4850 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 2300 4850 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cd4572ub.pdf" H 2300 4850 60  0001 C CNN
-	1    2300 4850
+P 6600 3850
+F 0 "U2" H 6300 3300 60  0000 C CNN
+F 1 "CD4572" V 6600 3850 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 6600 3850 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4572ub.pdf" H 6600 3850 60  0001 C CNN
+	1    6600 3850
 	-1   0    0    -1  
 $EndComp
-Text Label 2300 4350 1    60   ~ 0
+Text Label 6600 3350 1    60   ~ 0
 VCC
-Text Label 2300 5450 3    60   ~ 0
+Text Label 6600 4450 3    60   ~ 0
 GND
-Text Label 1750 4900 2    60   ~ 0
+Text Label 6050 3900 2    60   ~ 0
 ~Y0
-Text Label 3000 5000 0    60   ~ 0
+Text Label 7300 4000 0    60   ~ 0
 ~CE
-Text Label 1750 4700 2    60   ~ 0
+Text Label 6050 3700 2    60   ~ 0
 Y2
-Text Label 2850 4700 0    60   ~ 0
+Text Label 7150 3700 0    60   ~ 0
 ~Y2
-Text Label 2850 4600 0    60   ~ 0
+Text Label 7150 3600 0    60   ~ 0
 Y2
-Text Label 1750 5100 2    60   ~ 0
+Text Label 6050 4100 2    60   ~ 0
 PV
-Text Label 1750 5200 2    60   ~ 0
+Text Label 6050 4200 2    60   ~ 0
 ~PV
 $Comp
 L CAPAPOL C1
@@ -448,7 +448,7 @@ F 3 "" H 6500 2100 300 0000 C CNN
 	1    6500 2100
 	0    -1   1    0   
 $EndComp
-Text Label 1750 5000 2    60   ~ 0
+Text Label 6050 4000 2    60   ~ 0
 Y0
 Wire Wire Line
 	1000 1350 1350 1350
@@ -571,45 +571,45 @@ Wire Wire Line
 Wire Wire Line
 	6700 1450 6700 2100
 Wire Wire Line
-	1850 4700 1750 4700
+	6150 3700 6050 3700
 Wire Wire Line
-	1850 4900 1750 4900
+	6150 3900 6050 3900
 Wire Wire Line
-	2750 4700 2850 4700
+	7050 3700 7150 3700
 Wire Wire Line
-	2750 4600 2850 4600
+	7050 3600 7150 3600
 Wire Wire Line
-	1850 5200 1750 5200
+	6150 4200 6050 4200
 Wire Wire Line
-	1850 5100 1750 5100
+	6150 4100 6050 4100
 Wire Wire Line
-	1850 4600 1550 4600
+	6150 3600 5850 3600
 Wire Wire Line
-	1850 5000 1750 5000
+	6150 4000 6050 4000
 Wire Wire Line
-	2750 5000 3000 5000
+	7050 4000 7300 4000
 Wire Wire Line
-	1850 4800 1800 4800
+	6150 3800 6100 3800
 Wire Wire Line
-	1800 4800 1800 4150
+	6100 3800 6100 3150
 Wire Wire Line
-	1800 4150 2800 4150
+	6100 3150 7100 3150
 Wire Wire Line
-	2800 4150 2800 4900
+	7100 3150 7100 3900
 Wire Wire Line
-	2800 4900 2750 4900
+	7100 3900 7050 3900
 Wire Wire Line
-	2750 4800 2850 4800
+	7050 3800 7150 3800
 Wire Wire Line
-	2850 4800 2850 5100
+	7150 3800 7150 4100
 Wire Wire Line
-	2850 5100 2750 5100
-Text Label 2850 5200 0    60   ~ 0
+	7150 4100 7050 4100
+Text Label 7150 4200 0    60   ~ 0
 Y0
 Wire Wire Line
-	2850 5200 2750 5200
-Text Label 2550 4150 0    60   ~ 0
+	7150 4200 7050 4200
+Text Label 6850 3150 0    60   ~ 0
 ~RE
-Text Label 2850 4800 0    60   ~ 0
+Text Label 7150 3800 0    60   ~ 0
 RE
 $EndSCHEMATC
