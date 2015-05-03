@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:te-1509
-LIBS:te-1509-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 8000 6500
@@ -609,4 +608,8 @@ Text Label 2850 5200 0    60   ~ 0
 Y0
 Wire Wire Line
 	2850 5200 2750 5200
+Text Label 2550 4150 0    60   ~ 0
+~RE
+Text Label 2850 4800 0    60   ~ 0
+RE
 $EndSCHEMATC
