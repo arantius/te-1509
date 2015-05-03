@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source T:/opt/te-1509/te-1509.sch)
-    (date "5/3/2015 4:39:07 PM")
+    (date "5/3/2015 5:20:51 PM")
     (tool "Eeschema (2014-10-27 BZR 5228)-product"))
   (components
     (comp (ref CN1)
@@ -45,8 +45,8 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5545123C))
     (comp (ref C1)
-      (value 220u)
-      (footprint te-1509:TantalC_SizeT_EIA-3528)
+      (value 100u)
+      (footprint Capacitors_ThroughHole:C_Radial_D5_L11_P2)
       (libsource (lib device) (part CAPAPOL))
       (sheetpath (names /) (tstamps /))
       (tstamp 55451DD1)))
