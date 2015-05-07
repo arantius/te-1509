@@ -375,7 +375,7 @@ F 3 "http://www.diodes.com/datasheets/ds11005.pdf" H 5950 1900 60  0001 C CNN
 	1    5950 1900
 	1    0    0    -1  
 $EndComp
-Text Label 3500 3050 2    60   ~ 0
+Text Label 3100 3050 2    60   ~ 0
 ~CE
 $Comp
 L SP3T SW1
@@ -407,7 +407,7 @@ F 3 "http://www.alliancememory.com/pdf/AS6C1008%20feb%202007.pdf" H 4000 2550 60
 	1    4000 2550
 	1    0    0    -1  
 $EndComp
-Text Label 3500 3150 2    60   ~ 0
+Text Label 3100 3150 2    60   ~ 0
 VRR
 $Comp
 L CD4572 U2
@@ -642,4 +642,45 @@ Wire Wire Line
 	6650 2100 6650 1850
 Text Notes 6500 1400 0    40   ~ 0
 Optional extra footprints, in \ncase multiple smaller caps are\navailable; total 100u or so.
+$Comp
+L R R1
+U 1 1 554BD931
+P 3200 3400
+F 0 "R1" V 3280 3400 40  0000 C CNN
+F 1 "50k" V 3207 3401 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3130 3400 30  0001 C CNN
+F 3 "" H 3200 3400 30  0000 C CNN
+	1    3200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3150 3100 3150
+$Comp
+L R R2
+U 1 1 554BD9C2
+P 3200 2800
+F 0 "R2" V 3280 2800 40  0000 C CNN
+F 1 "50k" V 3207 2801 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3130 2800 30  0001 C CNN
+F 3 "" H 3200 2800 30  0000 C CNN
+	1    3200 2800
+	1    0    0    -1  
+$EndComp
+Text Label 3200 2550 2    60   ~ 0
+VRR
+Wire Wire Line
+	3100 3050 3500 3050
+Connection ~ 3200 3050
+$Comp
+L GND #PWR07
+U 1 1 554BDAAD
+P 3200 3650
+F 0 "#PWR07" H 3200 3650 30  0001 C CNN
+F 1 "GND" H 3200 3580 30  0001 C CNN
+F 2 "" H 3200 3650 60  0000 C CNN
+F 3 "" H 3200 3650 60  0000 C CNN
+	1    3200 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 3150
 $EndSCHEMATC
