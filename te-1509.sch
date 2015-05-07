@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:te-1509
+LIBS:te-1509-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 8000 6500
@@ -295,7 +296,7 @@ U 1 1 5541A088
 P 5850 1450
 F 0 "BT1" H 5850 1650 50  0000 C CNN
 F 1 "BATTERY" H 5850 1260 50  0000 C CNN
-F 2 "te-1509:CR2032" H 5850 1450 60  0001 C CNN
+F 2 "te-1509:Coin_20mm" H 5850 1450 60  0001 C CNN
 F 3 "" H 5850 1450 60  0000 C CNN
 	1    5850 1450
 	1    0    0    1   
@@ -407,7 +408,7 @@ F 3 "http://www.alliancememory.com/pdf/AS6C1008%20feb%202007.pdf" H 4000 2550 60
 	1    0    0    -1  
 $EndComp
 Text Label 3500 3150 2    60   ~ 0
-VCC
+VRR
 $Comp
 L CD4572 U2
 U 1 1 5545123C
@@ -440,13 +441,13 @@ Text Label 6050 4200 2    60   ~ 0
 $Comp
 L CAPAPOL C1
 U 1 1 55451DD1
-P 6500 2100
-F 0 "C1" H 6550 2200 40  0000 L CNN
-F 1 "100u" H 6550 2000 40  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 6600 1950 30  0001 C CNN
-F 3 "" H 6500 2100 300 0000 C CNN
-	1    6500 2100
-	0    -1   1    0   
+P 6650 1650
+F 0 "C1" H 6700 1750 40  0000 L CNN
+F 1 "33u" H 6700 1550 40  0000 L CNN
+F 2 "te-1509:TantalC_SizeT_EIA-3528" H 6750 1500 30  0001 C CNN
+F 3 "" H 6650 1650 300 0000 C CNN
+	1    6650 1650
+	-1   0    0    1   
 $EndComp
 Text Label 6050 4000 2    60   ~ 0
 Y0
@@ -565,11 +566,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 2250 5800 2250
 Wire Wire Line
-	6150 1450 6700 1450
-Wire Wire Line
-	6300 2100 5950 2100
-Wire Wire Line
-	6700 1450 6700 2100
+	5950 2100 6650 2100
 Wire Wire Line
 	6150 3700 6050 3700
 Wire Wire Line
@@ -612,4 +609,37 @@ Text Label 6850 3150 0    60   ~ 0
 ~RE
 Text Label 7150 3800 0    60   ~ 0
 RE
+$Comp
+L CAPAPOL C2
+U 1 1 554ABBDB
+P 6900 1650
+F 0 "C2" H 6950 1750 40  0000 L CNN
+F 1 "33u" H 6950 1550 40  0000 L CNN
+F 2 "te-1509:TantalC_SizeT_EIA-3528" H 7000 1500 30  0001 C CNN
+F 3 "" H 6900 1650 300 0000 C CNN
+	1    6900 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CAPAPOL C3
+U 1 1 554ABC7B
+P 7150 1650
+F 0 "C3" H 7200 1750 40  0000 L CNN
+F 1 "33u" H 7200 1550 40  0000 L CNN
+F 2 "te-1509:TantalC_SizeT_EIA-3528" H 7250 1500 30  0001 C CNN
+F 3 "" H 7150 1650 300 0000 C CNN
+	1    7150 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 1450 7150 1450
+Connection ~ 6900 1450
+Connection ~ 6650 1450
+Wire Wire Line
+	6650 1850 7150 1850
+Connection ~ 6900 1850
+Wire Wire Line
+	6650 2100 6650 1850
+Text Notes 6500 1400 0    40   ~ 0
+Optional extra footprints, in \ncase multiple smaller caps are\navailable; total 100u or so.
 $EndSCHEMATC
